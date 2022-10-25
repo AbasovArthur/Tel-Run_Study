@@ -1,0 +1,23 @@
+div{
+    width: 750px;
+    background-image: url(../image/pattern.jpg);
+    padding: 30px;
+    margin-right: auto;
+}
+img{
+    width: 720px;
+}
+
+p{
+    text-align: center;
+    color: #f9ca24;
+    font-size: 24px;
+}
+
+
+
+/* First level: 1. Задача для всех: Создать папку "images" в папке project2 и скачать в нее 8 картинок на одну тему(н-р картинки городов Германии)
+
+
+
+Доп.задача(по желанию): Создать 8 тегов div и для каждого из них сделать фоновую картинку с помощью css свойства background-image. */
