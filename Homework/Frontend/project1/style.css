@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    height: 70px;
+    background: #1ABC9C;
+    padding: 15px 0;
+}
+
+.heder-wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.social-icon{
+    margin-right: 20px;
+}
+.container_about_us{
+    /* max-width: 1410px; */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    /* padding: 0 15px; */
+
+}
+.selection_text{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 0 70px;    
+}
+.selection_text p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: #000000;
+}
+.about_title{
+    margin: 0 auto 23px;
+}
+.title{
+    /* margin: auto; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+
+}
+.container_project{
+    background-color: #DCFFEB;
+    height: 730px;
+    /* display: flex; */
+}
+.project_content{
+    display: flex;
+    justify-content: space-around;
+    padding: 124px 65px;
+}
+.project_title{
+    padding: 124px 64px 0;
+}
+.cover_picture{
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: column;
+    align-content: flex-end; */
+    padding: 0 36px 36px;
+    align-items: flex-end;
+    min-width: 300px;
+    min-height: 300px;
+    height: 380px;
+    width: 30vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/Rectangle_gaz_prom_are.png);
+}
+.text_hover{
+    opacity: 0;
+	transition: opacity .5s;
+    
+}
+.text_hover:hover{
+   opacity: 1;
+   transform: scale(1);
+   color: white;
+}
+.card_description{
+    padding: 23px 0;
+}
