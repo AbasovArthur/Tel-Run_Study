@@ -1,0 +1,38 @@
+@media(max-width: 511px) {
+    .header-wrapper {
+        width: 80%;
+    }
+    .header-icon:not(:last-child) {
+        margin-right: 20px;
+    }
+    .intro-nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .nav-link {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5px;
+    }
+    .nav-link:last-child {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .card {
+        width: 100%;
+    }
+    .intro-img {
+        display: none;
+    }
+    .intro-text {
+        width: 100%;
+    }
+    .offer-wrapper h1 {
+     font-size: 22px;
+    }
+}
