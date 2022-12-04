@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for new in {50..100}
+do
+touch newFile_$new.txt
+done
+
