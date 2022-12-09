@@ -79,7 +79,7 @@ TODO
 
             int b = scanner.nextInt();
             int sum = 0;
-
+//!!!
 //            for (; ; ){
 //                System.out.println("add num: ");
 //                int a = scanner.nextInt();
@@ -87,12 +87,24 @@ TODO
 //                System.out.println(sum);
 //            }
 
-            for (int i = 0; i < num.length; i++) {
-                System.out.println("add num: ");
+//            for (int i = 0; i < num.length; i++) {
+//                System.out.println("add num: ");
+//                int a = scanner.nextInt();
+//                sum += a;
+//                System.out.println(sum);
+//            }
+//!!! ВООБЩЕ НИЧЕГО НЕ ПОНЯТНО!
+// нет никакого бесконечного, - только ввожу цифру и
+// оно сумирует с предыдущей введенной цифрой.
+            while (true){
+                System.out.println("enter num for summ: ");
+                //if ("q".equals(nextLine)) break; // из lesson task for Java
+                //if ("q".equals(scanner.nextInt)) break;
                 int a = scanner.nextInt();
                 sum += a;
                 System.out.println(sum);
             }
+
 
 
 
