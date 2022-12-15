@@ -19,16 +19,19 @@ import static java.lang.System.in;
  */
 public class Main {
 
+    public static Scanner scanner = new Scanner(System.in);
+
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
 //1) калькулятор:
         Calculator calculator = new Calculator();
         calculator.starCalculations();
-        //ArreyCalc arreyCalc = new ArreyCalc();
-        //arreyCalc.arrCalcy(); //тут был класс с переменными для "Calculator",
+        ArreyCalc arreyCalc = new ArreyCalc();
+        arreyCalc.arrCalcy(); //тут был класс с переменными для "Calculator",
         // когда закинул его в пакет вместе с калькулятором и достал его от туда
         // программа дала ошибку к сканнеру, удалил этот класс и все заработало
-        //понятия не имею как оно сейчас работает
+        //понятия не имею как оно сейчас работает ---- done!
 //1) калькулятор.
 //2) массив с выводом случайных чисел в консоль:
         RandomNum randomNum = new RandomNum();
@@ -40,6 +43,6 @@ public class Main {
 //3) пузырьковая сортировка массива по возрастанию & убыванию.
 
     }
-    static Scanner scanner = new Scanner(in);
+
 
 }
