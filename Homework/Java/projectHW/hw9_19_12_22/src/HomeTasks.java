@@ -1,9 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Hw7 {
-
-/*
+public class HomeTasks {
+    /*
 2) Проверить больше ли некоторого значения
     сумма двух чисел, если нет вывести сообщение
     что сумма меньше заданного значение
@@ -176,8 +175,8 @@ public class Hw7 {
         System.out.println("all elements of array:");
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt();        //сюда можно ввести число, "nextInt(100);"  | can add a number,
-                                                //оно будет объемом [одной ячейки] массива  | it will be the volume
-                                                //                                          | of cell of the array
+            //оно будет объемом [одной ячейки] массива  | it will be the volume
+            //                                          | of cell of the array
             System.out.print(array[i] + " ");
         }
         int sum = 0;
@@ -191,4 +190,68 @@ public class Hw7 {
         System.out.println("Multiplication: " + multpcn);
         System.out.println();
     }            //-------------done!
+    /*
+    8) Написать 15 тернарных операторов (7/15)
+     */
+    public void ternarOperator (){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Тернарные операторы \nTernary Operators:");
+        System.out.println("enter 2 num:");
+
+        int a = Main.scanner.nextInt();
+        int b = Main.scanner.nextInt();
+        int max = (a > b) ? a : b;                                                  //-1
+        System.out.println("Большее из двух чисел: " + max);
+        /*
+        Этот тернарный оператор
+        присваивает переменной max значение a,
+        если a больше b, иначе
+        присваивает значение b.
+         */
+        String result = (a > b) ? "первое число больше второго"
+                : "первое число меньше второго";                                    //-2
+        System.out.println(result);
+//вывести оценку:
+        System.out.println("enter yours amount baliv:");
+        double score = Main.scanner.nextDouble();
+        char baliv = (score >= 90) ? 'A'
+                : (score >=80) ? 'B'
+                : (score >= 70) ? 'C'
+                : (score >= 60) ? 'D'
+                : 'F';                                                              //-3
+        System.out.println("yours amount baliv: " + baliv);
+
+//вычислить совершеннолетие:
+        System.out.println("enter how old are you?");
+        byte age = Main.scanner.nextByte();
+        String message = (age >= 18) ? "You are an adult" : "You are a minor";      //-4
+        System.out.println(message);
+
+//ввести или положительное или отрицательное число:
+        System.out.println("entr number. Positive it true or negative it false ");
+        int valueNum = Main.scanner.nextInt();
+        boolean positive = (valueNum >= 0) ? true : false;                          //-5
+        System.out.println(positive);
+
+//определить сезон
+        System.out.println("введите номер текущего месяца :\nenter current month number: ");
+        byte month = Main.scanner.nextByte();
+        String season = (month == 12 || month == 1 || month == 2) ? "Winter"
+                : (month >= 3 && month <= 5) ? "Spring"
+                : (month >= 6 && month <= 8) ? "Summer"
+                : "Aut";
+        System.out.println("now " + season + " season");                            //-6
+//
+        System.out.println("введите 3 числа, из них я определю максимальное: \n" +
+                "enter 3 numbers, of which I will determine the maximum");
+        int x = Main.scanner.nextInt();
+        int y = Main.scanner.nextInt();
+        int c = Main.scanner.nextInt();
+
+        int maxNum = (x > y) ? ((x > c) ? x : c) : ((y > c) ? y : c);               //-7 to be continued...
+        System.out.println("Max number: " + maxNum);
+
+
+    }           //-------------done!
+
 }

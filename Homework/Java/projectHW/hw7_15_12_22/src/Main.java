@@ -47,11 +47,10 @@ Example ежик = new Example();
     hw7.randomMeth();
     //task5:
     hw7.sumAndMultNum();
-    // task5:
+    // task6:
     FinderArea area = new FinderArea();
         System.out.println("Triangle area: "
                 + area.triangeArea(56,42));
-
         System.out.println("Rectangle area: "
                 + area.rectangleArea(56,42));
         System.out.println("Circlee area: "
