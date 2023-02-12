@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    box-sizing: border-box;
+    line-height: 43px;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+}
+h3 {
+    font-size: 36px;
+    font-weight: 400;
+
+}
+/* screen "nav" & "about" */
+/*      "nav"             */
+header{
+    background: #F4F9E2;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul a {
+    text-decoration: none;
+    margin-right: 70px;
+    padding: 10px 0;
+    color: black;
+}
+nav ul a:hover {
+    border-bottom: 1px solid #22356F;
+}
+nav button {
+    background: #F9B640;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+/*      "about"             */
+#about .about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    height: auto;
+    align-items: start;
+    color: #22356F;
+    margin-top: 126px;
+
+}
+#about .info h2{
+    padding-bottom: 46px;
+}
+/* screen "nav" & "about" end*/
+/* ---------------------------*/
+/* screen "offer" */
+#offer {
+    background: #62D0DF;
+    color: white;
+}
+.offer__description {
+    height: 600px;
+}
+.offer__description h3{
+    padding-top: 88px;
+}
+.offer__description p{
+    padding-top: 27px;
+    padding-bottom: 123px;
+    width: 586px;
+}
+
+#offer .offer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 160px;
+}
+/* screen "offer" end   */
+/* ---------------------*/
+/* screen "declaration" */
+#declaration .declaration{
+    padding: 210px;
+    text-align: left, center;
+    width: 740px;
+}
+.declaration p:last-child{
+    padding-top: 30px;
+}
+.declaration p {
+    color: #22356F;
+}
+/* screen "declaration" end */
+/* -------------------------*/
+/* screen "option"          */
+#option {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 480px;
+}
+#option .item {
+    background: #0052C1;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 126px;
+}
+#option .item:first-child {
+    background-color: #22356F;
+}
+#option .item:last-child {
+    background: #76B58B;
+} 
+#option .item h3 {
+    font-size: 32px;
+}
+/* screen "option" end  */
+/* ---------------------*/
+/* screen "service"     */
+#service .service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+.service__description{
+    color: #22356F;
+}
+.service__description h3{
+    padding-top: 242px;
+}
+.service__description p {
+    padding-top: 50px;
+}
+/* screen "service" end  */
+
