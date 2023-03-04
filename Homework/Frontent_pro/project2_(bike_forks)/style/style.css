@@ -1,0 +1,350 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #1E1E1E;
+    color: #FFFFFF;
+}
+h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+}
+h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%; 
+}
+h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+@media (max-width: 660px){
+    .wrapper {
+        width: 520px;
+        margin: 0 auto;
+    }
+}
+/*#####          navigation      */
+header{
+    background-image: url('../media/main-screen__bgc.png');
+    background-repeat: no-repeat;
+    /* object-fit: fill; */
+    /* background-position: center; */
+    background-size: cover;
+}
+header .navigation .navigation__logo{
+
+    width: 40px;
+    height: 40px;
+    background-image: url('../media/logo.png');
+}
+header .navigation{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+header .navigation .navigation__options {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+header .navigation .navigation__options ul{
+    display: flex;
+    gap: 30px;
+}
+header .navigation button{
+    color: #FFFFFF;
+    padding: 10px 30px;
+    width: 169px;
+    height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+}
+/*#####          navigation end      */
+header .greeting{
+    width: 920px;
+    height: 100%;
+    padding-bottom: 220px;
+}
+header .greeting h1{
+    margin: 192px 0 50px;
+}
+header .greeting .greeting__counter{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+header .greeting .greeting__counter div{
+    width: 115px;
+    height: 112px;
+    background: #121212;
+    text-align: center
+}
+/*#####          greeting__counter end    */
+/* ########     header-order    # */
+header .header-order {
+    height: 130px;
+    background: #121212;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .header-order button {
+    color: #FFFFFF;
+    padding: 10px 30px;
+    width: 169px;
+    height: 44px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+}
+header .header-order .header-order__num{
+    display: flex;
+    justify-content: space-evenly;
+    width: 664px;
+}
+@media (max-width: 660px){
+    header .navigation .navigation__options {
+        display: none;
+        
+    }
+    header .navigation .navigation__options .navigation__options__icon{
+        background-image: url('../media/navIcon.png');
+        height: 60px;
+        width: 100%;
+    }
+}
+/* ########     header-order  end  # */
+
+/* ### Чем мы занимаемся? */
+#about{
+    margin: 0 auto 290px;
+}
+#about .about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+#about .about .about__img {
+    width: 462px;
+    height: 430px;
+    background-image: url('../media/image_forks.png');
+    background-repeat: no-repeat;
+    }
+#about .about .about__text { 
+    width: 641px;
+    margin-left:190px; 
+}
+#about .about__text p{
+    margin-top: 45px;
+}
+/*           @media */
+@media (max-width: 660px){
+    #about{
+        margin: 0;
+        
+    }
+    #about .about{
+        align-items: center; 
+    }
+    #about .about .about__img {
+        width: 300px;
+        height: 342px;        
+        }
+    #about .about .about__text {
+        padding: 19px;
+        }
+    #about .about__text p{
+        margin-top: 0px;
+        }   
+
+    #about .about{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        /* align-items: center */
+        }   
+}
+/* Чем мы занимаемся? end */
+/* ### Получите профессию прямо сейчас */
+#offer h2{
+    text-align: center;
+    margin-bottom: 80px;
+}
+#offer .offer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 80px;
+    align-items: start;
+    margin-bottom: 220px;
+}
+#offer .offer h3 {
+    padding: 18px 0 30px;
+}
+#offer .offer img {
+    height: 180px;
+}
+/*           @media */
+@media (max-width: 660px) {
+    #offer .offer {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: start;
+    }
+    #offer .offer img {
+        display: none;
+    }
+    #offer {
+        text-align: center;
+        margin: 80px;
+        
+    }
+}
+/* Получите профессию прямо сейчас end */
+/* ### Партнеры - топовые бренды */
+#partners h2 {
+    margin-bottom: 115px; 
+    text-align: center;
+}
+#partners img {
+    height: 230px;
+}
+#partners div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 130px;
+    row-gap: 40px;
+    justify-items: center;
+    margin-bottom: 225px;
+}
+@media (max-width: 660px) {
+    #partners div {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 130px;
+    row-gap: 40px;
+    }
+}
+/* Партнеры - топовые бренды end */
+/* ### Ваши преподаватели */
+#teachers h2 {
+    margin-bottom: 110px; 
+    text-align: center;
+}
+#teachers h3{
+    margin: 40px 0 15px;
+}
+
+/*
+#teachers .teachers > div div{
+    background-image: url(../media/foto_1.png);
+    width: 190px;
+    height: 190px;
+}
+*/
+
+
+#teachers .teachers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 200px;
+}
+@media (max-width: 660px) {
+    #teachers .teachers{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 200px;
+    }
+}
+#teachers .teachers .teacher1 div {
+    background-image: url(../media/foto_1.png);
+    width: 190px;
+    height: 190px;
+}
+#teachers .teachers .teacher2 div {
+    background-image: url(../media/foto_2.png);
+    width: 190px;
+    height: 190px;
+}
+#teachers .teachers .teacher3 div {
+    background-image: url(../media/foto_3.png);
+    width: 190px;
+    height: 190px;
+}
+@media (max-width: 660px) {
+    #teachers .teachers .teacher3{
+    /* margin-top: 200px; */
+    margin: 0 auto;
+    }
+}
+#teachers button {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+/* Ваши преподаватели end*/
+/* ### Статьи каждую неделю */
+#subscribe{
+    text-align: center;
+
+}
+#subscribe h2 {
+    margin-bottom: 30px; 
+}
+#subscribe p {
+    margin-bottom: 60px; 
+}
+#subscribe form input {
+    width: 492px;
+    height: 44px;
+    background: #FFFFFF;
+    opacity: 0.25;
+    border-radius: 50px 0px 0px 50px;
+    margin: 0 auto;
+    
+}
+#subscribe form button {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 30px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    color: white;
+}
+#subscribe .icon__social-media {
+    width: 290px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#subscribe .icon__social-media img {
+    border-radius: 50px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    padding: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+

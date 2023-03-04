@@ -1,0 +1,23 @@
+@media (max-width: 660px) {
+    
+}
+flex-wrap: wrap
+flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center
+
+width: 462px;
+align-items: center
+
+#about .about .about__text {
+    padding: 19px;
+    margin-top: 33px;
+ #about .about .about__text {
+    padding: 100px;
+    margin-top: 33px;   
+
+
+#about .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
